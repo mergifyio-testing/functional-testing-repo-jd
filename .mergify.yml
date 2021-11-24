@@ -1,0 +1,7 @@
+pull_request_rules:
+- actions:
+    comment:
+      message: Thank you {{
+  conditions:
+  - base=20211124172818/test_comment_template_syntax_error/main
+  name: comment
