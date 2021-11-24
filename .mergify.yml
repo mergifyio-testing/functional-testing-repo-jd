@@ -1,0 +1,10 @@
+pull_request_rules:
+- actions:
+    merge:
+      commit_message: title+body
+      priority: high
+  conditions:
+  - base=20211124173739/test_commit_message_brownout/main
+  - label=high
+  - status-success=continuous-integration/fake-ci
+  name: Merge priority high
