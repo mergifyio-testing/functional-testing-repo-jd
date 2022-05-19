@@ -1,0 +1,16 @@
+pull_request_rules:
+- actions:
+    label:
+      add:
+      - ok
+  conditions:
+  - base=20220519094856/test_request_reviews_clear_cache/main
+  - '#review-requested>0'
+  name: add label
+- actions:
+    request_reviews:
+      users:
+      - mergify-test1
+  conditions:
+  - base=20220519094856/test_request_reviews_clear_cache/main
+  name: request_reviews
