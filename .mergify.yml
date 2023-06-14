@@ -1,0 +1,13 @@
+pull_request_rules:
+- actions:
+    update: {}
+  conditions:
+  - base=20230614125301/test_update_action_on_conflicts/main
+  name: update
+- actions:
+    delete_head_branch: {}
+    merge: {}
+  conditions:
+  - base=20230614125301/test_update_action_on_conflicts/main
+  - label=merge
+  name: merge
