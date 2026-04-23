@@ -1,0 +1,11 @@
+checking_base_sha: e9efe57a6d118723d4c55be3ff5c6c13b0438d7b
+previous_failed_batches:
+  - checked_pull_requests:
+      - 12838
+      - 12839
+      - 12840
+    draft_pr_number: 12842
+pull_requests:
+  - number: 12838
+    scopes: []
+scopes: []
