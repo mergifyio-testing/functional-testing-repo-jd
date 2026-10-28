@@ -1,0 +1,4 @@
+commands_restrictions:
+  copy:
+    conditions:
+    - base=20261028161426/test_commands_restrictions_base_branch/main
