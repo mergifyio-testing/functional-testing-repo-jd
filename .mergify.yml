@@ -1,0 +1,12 @@
+merge_protections_settings:
+  auto_merge_conditions: true
+merge_queue:
+  batch_pull_request: false
+queue_rules:
+- merge_conditions:
+  - status-success=continuous-integration/fake-ci
+  merge_method: merge
+  name: default
+  queue_conditions:
+  - base=20261029111343/test_merge_through_queue_branch/main
+  - label=queue
